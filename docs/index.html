@@ -5,8 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Rawdon</title>
   <style>
+    html, body {
+      min-height: 100%;
+    }
+
     body {
-      margin: 30px 20px;
+      margin: 0;
+      padding: 30px 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
       background: #f7f4e8;
       color: #111111;
       font-family: Georgia, "Times New Roman", Times, serif;
@@ -15,8 +24,8 @@
     }
 
     .page {
-      max-width: 740px;
-      margin: 0 auto;
+      width: min(740px, 100%);
+      margin: 0;
       padding: 0;
       background: transparent;
     }
