@@ -1,77 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Rawdon</title>
   <style>
     body {
-      margin: 0;
-      padding: 24px;
-      background: #ffffff;
+      margin: 30px 20px;
+      background: #f7f4e8;
       color: #111111;
-      font-family: "Times New Roman", Times, serif;
+      font-family: Georgia, "Times New Roman", Times, serif;
       font-size: 18px;
-      line-height: 1.45;
+      line-height: 1.7;
     }
 
     .page {
-      max-width: 860px;
+      max-width: 740px;
+      margin: 0 auto;
+      padding: 0;
+      background: transparent;
     }
 
-    h1, h2, h3 {
-      font-weight: bold;
-      margin: 0 0 10px 0;
-    }
-
-    h1 {
-      font-size: 34px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-top: 28px;
-    }
-
+    h1,
+    h2,
     h3 {
-      font-size: 20px;
-      margin-top: 18px;
-    }
-
-    p {
+      font-weight: normal;
+      color: #111111;
       margin: 0 0 14px 0;
     }
 
+    h1 {
+      font-size: 2.1rem;
+      margin-bottom: 0.35em;
+      padding-bottom: 0.15em;
+      border-bottom: 1px solid #888;
+    }
+
+    h2 {
+      font-size: 1rem;
+      margin-top: 2.2em;
+      margin-bottom: 0.8em;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      font-size: 1rem;
+      margin-top: 1.8em;
+      margin-bottom: 0.3em;
+      color: #111111;
+    }
+
+    p {
+      margin: 0 0 1.1em 0;
+      max-width: 42em;
+    }
+
     ul {
-      margin-top: 8px;
-      padding-left: 22px;
+      margin: 0 0 1.2em 1.5em;
+      padding: 0;
     }
 
     li {
-      margin-bottom: 8px;
+      margin-bottom: 0.75em;
     }
 
     a {
-      color: #0000ee;
+      color: #11248e;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      text-decoration: underline;
+    }
+
+    .intro {
+      margin-bottom: 1.2em;
     }
 
     .nav {
-      margin: 12px 0 24px 0;
-      font-size: 16px;
+      margin: 0 0 1.5em 0;
+      padding-bottom: 0.5em;
+      border-bottom: 1px solid #d0c9b2;
+      font-size: 0.95rem;
+      line-height: 1.8;
     }
 
-    .meta {
-      color: #333333;
+    .nav a {
+      margin-right: 0.8em;
+      white-space: nowrap;
     }
 
-    .small {
-      font-size: 16px;
+    .nav a::after {
+      content: "|";
+      margin-left: 0.8em;
+      color: #999;
+    }
+
+    .nav a:last-child::after {
+      content: none;
+    }
+
+    .note {
+      color: #4c473f;
+      font-size: 0.95rem;
     }
 
     hr {
-      border: 0;
-      border-top: 1px solid #bfbfbf;
-      margin: 22px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+      margin: 2em 0;
+    }
+
+    .project-meta {
+      color: #444;
+      font-size: 0.92rem;
+      margin-bottom: 0.5em;
+    }
+
+    @media (max-width: 700px) {
+      body {
+        padding: 18px 12px;
+        font-size: 17px;
+      }
+
+      .page {
+        padding: 24px 20px 28px 20px;
+      }
+
+      .nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+      }
     }
   </style>
 </head>
@@ -79,74 +140,83 @@
   <div class="page">
     <h1>Sam Rawdon</h1>
 
-    <div class="meta">
-      Computer Science student at NYU<br />
-      Full-stack developer interested in product-focused software, internal tools, and clean user experiences
-    </div>
+    <p class="intro">
+      Computer Science student at NYU. Interested in full-stack and backend software development.
+    </p>
 
     <div class="nav">
-      <a href="#about">About</a> |
-      <a href="#resume">Resume</a> |
-      <a href="#projects">Projects</a> |
-      <a href="#skills">Skills</a> |
+      <a href="#about">About</a>
+      <a href="#background">Background</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
+      <a href="SamuelRawdonResume.pdf" target="_blank">Resume (PDF)</a>
     </div>
 
     <h2 id="about">About</h2>
     <p>
-      I am a computer science student at New York University pursuing minors in mathematics and philosophy. I like building software that is useful, straightforward, and thoughtful about the user. Most of my work has been in full-stack development, interface design, and modernizing older systems without breaking the workflows people rely on.
+      I am a computer science student at New York University pursuing minors in mathematics and philosophy. I like software that is practical, reliable, and well-designed. Most of my work has been in full-stack development, interface design, and modernizing older systems without losing the underlying business logic people depend on.
     </p>
 
-    <hr />
+    <hr>
 
-    <h2 id="resume">Resume</h2>
+    <h2 id="background">Background</h2>
     <p>
-      <strong>Education.</strong> New York University, B.A. in Computer Science. Minors in Mathematics and Philosophy. Expected graduation: May 2026.
+      <strong>Education.</strong> New York University, B.A. in Computer Science, with minors in Mathematics and Philosophy. Expected graduation: May 2026.
     </p>
     <p>
-      <strong>Relevant coursework.</strong> Data Structures, Algorithms, Operating Systems, Software Engineering, Agile and DevOps, Data Management and Analysis, Discrete Mathematics, Linear Algebra, Calculus II.
+      <strong>Coursework.</strong> Data Structures, Algorithms, Operating Systems, Software Engineering, Agile and DevOps, Data Management and Analysis, Computer Networking, Applied Internet Technology,Discrete Mathematics, Linear Algebra, and Calculus II.
     </p>
     <p>
-      <strong>Experience.</strong> I have worked in a long-term software internship focused on product development and modernization. My work has included building Blazor interfaces, working in C# and SQL, improving CRM workflows, and helping move legacy WinForms functionality into more maintainable modern interfaces.
+      <strong>Extracurriculars.</strong> D1 Ultimate Frisbee, <a href="https://wnyu.org/schedule/304287" target="_blank">WNYU College Radio</a>, Intramural Flag Football, Soccer, and Futsal
+    </p>
+    <p>
+      <strong>Experience.</strong> I have worked in a long-term software internship focused on product development and modernization. I have extensive experience with UI design, full-stack development, and agile development. I have also worked on numerous <a href="#projects">personal projects</a> to solve relevant issues in my own life, and I am comfortable with a variety of programming languages and frameworks. 
     </p>
 
-    <hr />
+    <hr>
 
     <h2 id="projects">Projects</h2>
 
     <h3>NextStep</h3>
-    <p class="small">Express, MongoDB, Handlebars</p>
+    <div class="project-meta">Express, MongoDB, Handlebars</div>
     <p>
-      NextStep is a job search and networking tracker that helps users manage applications, save professional contacts, record networking interactions, and keep follow-up tasks organized. I built it as a full-stack application around a real workflow problem: keeping a job search structured without making it feel tedious.
+      NextStep is a job search and networking tracker built to help users manage applications, save professional contacts, record networking interactions, and keep follow-up tasks organized. I built it around a real workflow problem: keeping a search process structured without making it cumbersome.
     </p>
 
     <h3>Pitchdeck</h3>
-    <p class="small">JavaScript, Flask, MongoDB</p>
+    <div class="project-meta">JavaScript, Flask, MongoDB</div>
     <p>
-      Pitchdeck is a job discovery platform that scrapes listings, organizes them into categories such as trending and live roles, and recommends jobs based on user preferences. A large part of the project was designing the logic that made raw job data more useful instead of simply displaying it.
+      Pitchdeck is a job discovery platform that scrapes listings, organizes them into useful categories, and recommends roles based on user preferences. The main challenge was turning raw job data into something ranked and readable rather than simply displaying a feed.
     </p>
 
     <h3>Cache</h3>
-    <p class="small">React, Express, Node, MongoDB</p>
+    <div class="project-meta">React, Express, Node, MongoDB</div>
     <p>
-      Cache is an online catalog system for physical media built for WNYU. It includes search, account features, favoriting, animated album browsing, and a structured catalog experience. The project pushed me to think carefully about both backend organization and the feel of the interface.
+      Cache is an online catalog system for physical media built for WNYU. It includes search, favoriting, account features, and a browsing experience designed to make a catalog feel less like a database and more like a place you would actually want to spend time in.
     </p>
 
-    <hr />
+    <h3>Other work</h3>
+    <p>
+      And numerous other smaller class projects and side projects, ranging from coursework builds to little things I made for fun. More of that work can be found on <a href="https://github.com/SamRawdon">GitHub</a>.
+    </p>
+
+    <hr>
 
     <h2 id="skills">Skills</h2>
     <ul>
-      <li>Languages: JavaScript, C#, SQL, HTML, CSS</li>
-      <li>Frameworks and tools: Express, React, Blazor, ASP.NET, Flask, Handlebars, MongoDB</li>
-      <li>General strengths: full-stack development, UI refinement, debugging, feature design, translating legacy business logic into cleaner modern systems</li>
+      <li>JavaScript, C#, Java, C, Python, SQL, HTML, CSS</li>
+      <li>Express, React, Blazor, ASP.NET, Flask, Handlebars, MongoDB, Node, Pandas, NumPy</li>
+      <li>Git, SVN, Agile development, unit testing, code review, and documentation</li>
+      <li>Full-stack development, UI refinement, debugging, feature design, and legacy modernization</li>
     </ul>
 
-    <hr />
+    <hr>
 
     <h2 id="contact">Contact</h2>
     <p>Email: sr6360@nyu.edu</p>
-    <p>GitHub: [SamRawdon](https://github.com/SamRawdon)</p>
-    <p>LinkedIn: [Sam Rawdon](https://www.linkedin.com/in/samrawdon/)</p>
+    <p><a href="https://github.com/SamRawdon" target="_blank">GitHub</a></p>
+    <p><a href="https://www.linkedin.com/in/samrawdon/" target="_blank">LinkedIn</a></p>
     <p class="small"><a href="SamuelRawdonResume.pdf" target="_blank">Download Resume (PDF)</a></p>
   </div>
 </body>
