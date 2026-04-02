@@ -4,229 +4,311 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sam Rawdon</title>
-  <style>
-    html, body {
-      min-height: 100%;
-    }
-
-    body {
-      margin: 0;
-      padding: 30px 20px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      background: #fafafa;
-      color: #111111;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      font-size: 18px;
-      line-height: 1.7;
-    }
-
-    .page {
-      width: min(740px, 100%);
-      margin: 0;
-      padding: 0;
-      background: transparent;
-    }
-
-    h1,
-    h2,
-    h3 {
-      font-weight: normal;
-      color: #111111;
-      margin: 0 0 14px 0;
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      margin-bottom: 0.35em;
-      padding-bottom: 0.15em;
-      border-bottom: 1px solid #888;
-    }
-
-    h2 {
-      font-size: 1rem;
-      margin-top: 2.2em;
-      margin-bottom: 0.8em;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    h3 {
-      font-size: 1rem;
-      margin-top: 1.8em;
-      margin-bottom: 0.3em;
-      color: #111111;
-    }
-
-    p {
-      margin: 0 0 1.1em 0;
-      max-width: 42em;
-    }
-
-    ul {
-      margin: 0 0 1.2em 1.5em;
-      padding: 0;
-    }
-
-    li {
-      margin-bottom: 0.75em;
-    }
-
-    a {
-      color: #11248e;
-      text-decoration: none;
-    }
-
-    a:hover,
-    a:focus {
-      text-decoration: underline;
-    }
-
-    .intro {
-      margin-bottom: 1.2em;
-    }
-
-    .nav {
-      margin: 0 0 1.5em 0;
-      padding-bottom: 0.5em;
-      border-bottom: 1px solid #d0c9b2;
-      font-size: 0.95rem;
-      line-height: 1.8;
-    }
-
-    .nav a {
-      margin-right: 0.8em;
-      white-space: nowrap;
-    }
-
-    .nav a::after {
-      content: "|";
-      margin-left: 0.8em;
-      color: #999;
-    }
-
-    .nav a:last-child::after {
-      content: none;
-    }
-
-    .note {
-      color: #4c473f;
-      font-size: 0.95rem;
-    }
-
-    hr {
-      border: none;
-      border-top: 1px solid #ddd;
-      margin: 2em 0;
-    }
-
-    .project-meta {
-      color: #444;
-      font-size: 0.92rem;
-      margin-bottom: 0.5em;
-    }
-
-    @media (max-width: 700px) {
-      body {
-        padding: 18px 12px;
-        font-size: 17px;
-      }
-
-      .page {
-        padding: 24px 20px 28px 20px;
-      }
-
-      .nav a {
-        display: inline-block;
-        margin-bottom: 8px;
-      }
-    }
-  </style>
+  <meta name="description" content="Personal website of Sam Rawdon — software projects, writing, and things I'm interested in.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <div class="page">
-    <h1>Sam Rawdon</h1>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="site-brand" href="#top">Sam Rawdon</a>
 
-    <p class="intro">
-      Computer Science student at NYU. Interested in full-stack and backend software development.
-    </p>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-expanded="false"
+        aria-controls="site-nav"
+        aria-label="Open navigation menu"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
 
-    <div class="nav">
-      <a href="#about">About</a>
-      <a href="#background">Background</a>
-      <a href="#projects">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contact">Contact</a>
-      <a href="SamuelRawdonResume.pdf" target="_blank">Resume (PDF)</a>
+      <nav class="site-nav" id="site-nav" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#media">Media</a>
+        <a href="#interests">Interests</a>
+        <a href="#contact">Contact</a>
+        <a class="resume-link" href="assets/images/SamuelRawdonResume.pdf">Resume</a>
+      </nav>
     </div>
+  </header>
 
-    <h2 id="about">About</h2>
-    <p>
-      I am a computer science student at New York University pursuing minors in mathematics and philosophy. I like software that is practical, reliable, and well-designed. Most of my work has been in full-stack development, interface design, and modernizing older systems without losing the underlying business logic people depend on.
-    </p>
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Software Engineer · NYU Computer Science</p>
+          <h1>I build full-stack applications with a focus on structure, usability, and performance.</h1>          
+          <p class="hero-text">
+            I’m drawn to systems architecture, scalable backend development, and products that turn messy workflows into clean experiences.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">View projects</a>
+            <a class="button button-secondary" href="assets/images/SamuelRawdonResume.pdf" target="_blank">Read resume</a>
+          </div>
+        </div>
 
-    <hr>
+        <div class="hero-card">
+          <div class="hero-card-label">Currently</div>
+          <ul>
+            <li>Preparing for graduation</li>
+            <li>Building full-stack workflow tools</li>
+            <li>Hosting my radio show</li>
+            <li>Playing frisbee</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-    <h2 id="background">Background</h2>
-    <p>
-      <strong>Education.</strong> New York University, B.A. in Computer Science, with minors in Mathematics and Philosophy. Expected graduation: May 2026.
-    </p>
-    <p>
-      <strong>Coursework.</strong> Data Structures, Algorithms, Operating Systems, Software Engineering, Agile and DevOps, Data Management and Analysis, Computer Networking, Applied Internet Technology, Discrete Mathematics, Linear Algebra, and Calculus II.
-    </p>
-    <p>
-      <strong>Extracurriculars.</strong> D1 Ultimate Frisbee, <a href="https://wnyu.org/schedule/304287" target="_blank">WNYU College Radio</a>, Intramural Flag Football, Soccer, and Futsal
-    </p>
-    <p>
-      <strong>Experience.</strong> I have worked in a long-term software internship focused on product development and modernization. I have extensive experience with UI design, full-stack development, and agile development. I have also worked on numerous <a href="#projects">personal projects</a> to solve relevant issues in my own life, and I am comfortable with a variety of programming languages and frameworks. 
-    </p>
+    <section class="section" id="about">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">About</p>
+          <h2>About me</h2>
+        </div>
+        <div class="stacked-copy">
+          <p>
+            I am a computer science student at New York University pursuing minors in mathematics and philosophy. Most of my work has been in full-stack development, interface design, and modernizing older systems without losing the logic people already rely on.
+          </p>
+          <p>
+            I like software that is clear, reliable, and pleasant to use. That usually means building solutions to real world issues — whether that is tracking job searches, organizing information, or sending a valentine to my girlfriend.
+          </p>
+        </div>
+      </div>
+    </section>
 
-    <hr>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-grid">
+          <div>
+            <p class="section-label">Experience</p>
+            <h2>Professional work</h2>
+          </div>
+        </div>
 
-    <h2 id="projects">Projects</h2>
+        <div class="experience-list">
+          <article class="experience-item">
+            <div class="experience-topline">
+              <h3>Software Engineering Intern</h3>
+              <p class="experience-date">2024 – Present</p>
+            </div>
 
-    <h3>NextStep</h3>
-    <div class="project-meta">Express, MongoDB, Handlebars</div>
-    <p>
-      NextStep is a job search and networking tracker built to help users manage applications, save professional contacts, record networking interactions, and keep follow-up tasks organized. I built it around a real workflow problem: keeping a search process structured without making it cumbersome.
-    </p>
+            <div class="experience-content">
+              <a class="text-link" href="https://omni-view.com/" target="_blank" rel="noopener noreferrer">Omni~View</a>
 
-    <h3>Pitchdeck</h3>
-    <div class="project-meta">JavaScript, Flask, MongoDB</div>
-    <p>
-      Pitchdeck is a job discovery platform that scrapes listings, organizes them into useful categories, and recommends roles based on user preferences. The main challenge was turning raw job data into something ranked and readable rather than simply displaying a feed.
-    </p>
+              <p>
+                I have worked on building the next-gen web application for Omni~View, as well as maintaining and improving the legacy application. This has included work on API design and implementation, service-layer logic, database queries, and front-end development in Blazor and Winforms.
+              </p>
 
-    <h3>Cache</h3>
-    <div class="project-meta">React, Express, Node, MongoDB</div>
-    <p>
-      Cache is an online catalog system for physical media built for WNYU. It includes search, favoriting, account features, and a browsing experience designed to make a catalog feel less like a database and more like a place you would actually want to spend time in.
-    </p>
+              <ul class="experience-points">
+                <li>Build core functionality for the company’s next-gen Blazor web app end-to-end ensuring feature parity with legacy while improving maintainability.</li>
+                <li>Design and implement API routes and service-layer logic in C# / ASP.NET / SQL, wiring the new Blazor UI into existing legacy endpoints and data flows</li>
+                <li>Developed and launched a CRM system used by 200+ companies using C#, SQL, ASP.NET, and WinForms</li>
+                <li>Improve quality and release confidence through feature testing, regression coverage, and hands-on edge-case validation; contribute in Agile/Scrum ceremonies</li>
+              </ul>
+            </div>
+          </article>
 
-    <h3>Other work</h3>
-    <p>
-      And numerous other smaller class projects and side projects, ranging from coursework builds to little things I made for fun. More of that work can be found on <a href="https://github.com/SamRawdon">GitHub</a>.
-    </p>
+          <article class="experience-item">
+            <div class="experience-topline">
+              <h3>Software Engineering Intern</h3>
+              <p class="experience-date">2022</p>
+            </div>
 
-    <hr>
+            <div class="experience-content">
+              <a class="experience-org text-link" href="https://www.cybertrol.com/" target="_blank" rel="noopener noreferrer">Cybertrol Engineering</a>
 
-    <h2 id="skills">Skills</h2>
-    <ul>
-      <li>JavaScript, C#, Java, C, Python, SQL, HTML, CSS</li>
-      <li>Express, React, Blazor, ASP.NET, Flask, Handlebars, MongoDB, Node, Pandas, NumPy</li>
-      <li>Git, SVN, Agile development, unit testing, code review, and documentation</li>
-      <li>Full-stack development, UI refinement, debugging, feature design, and legacy modernization</li>
-    </ul>
+              <p>
+                I worked on development of the PalletWorks product, a warehouse management system for tracking inventory, orders, and shipments.
+              </p>
 
-    <hr>
+              <ul class="experience-points">
+                <li>Developed PalletWorks core logic using Java.</li>
+                <li>Customized styling using JavaScript, HTML, and CSS.</li>
+                <li>Worked on API development and integration.</li>
+                <li>Partnered with a team of four in an agile process with rapid prototyping and stakeholder alignment.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
 
-    <h2 id="contact">Contact</h2>
-    <p>Email: sr6360@nyu.edu</p>
-    <p><a href="https://github.com/SamRawdon" target="_blank">GitHub</a></p>
-    <p><a href="https://www.linkedin.com/in/samrawdon/" target="_blank">LinkedIn</a></p>
-    <p class="small"><a href="SamuelRawdonResume.pdf" target="_blank">Download Resume (PDF)</a></p>
-  </div>
+    <section class="section section-alt" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Projects</p>
+            <h2>Selected work</h2>
+          </div>
+          <p class="section-intro">
+            A few full stack projects I've worked on, including class projects and personal work.
+          </p>
+        </div>
+
+        <div class="card-grid">
+          <a
+            class="card-link"
+            href="https://github.com/nyu-csci-ua-0467-001-002-spring-26/final-project-SamRawdon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <article class="card">
+              <p class="card-tag">Express · MongoDB · Handlebars</p>
+              <h3>NextStep</h3>
+              <p>
+                A job search and networking tracker for managing applications, contacts, interactions, and follow-up tasks in one place.
+              </p>
+            </article>
+          </a>
+
+          <a
+            class="card-link"
+            href="https://github.com/swe-students-fall2025/5-final-last-dance"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <article class="card">
+              <p class="card-tag">JavaScript · Flask · MongoDB</p>
+              <h3>Pitchdeck</h3>
+              <p>A job discovery platform that scrapes listings from MANGO, ranks them, and recommends them based on user preferences.</p>
+            </article>
+          </a>
+
+          <a
+            class="card-link"
+            href="https://github.com/SamRawdon/Cache"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <article class="card">
+              <p class="card-tag">React · Express · Node · MongoDB</p>
+              <h3>Cache</h3>
+              <p>A catalog system for physical media built for WNYU, with search, account features, favoriting, and a more considered browsing experience.</p>
+            </article>
+          </a>
+
+          <a
+            class="card-link"
+            href="https://github.com/SamRawdon"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <article class="card">
+              <p class="card-tag">More work</p>
+              <h3>Other projects</h3>
+              <p>Smaller class projects, experiments, and other side work live on my GitHub.</p>
+              <p class="text-link">Browse GitHub</p>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="interests">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">Interests</p>
+          <h2>What I’m interested in</h2>
+        </div>
+        <div>
+          <div class="pill-row">
+            <span class="pill">Full-stack development</span>
+            <span class="pill">Distributed systems</span>
+            <span class="pill">Systems architecture</span>
+            <span class="pill">Backend infrastructure</span>
+            <span class="pill">Data pipelines and ETL workflows</span>
+            <span class="pill">API design and service integration</span>
+            <span class="pill">Database design and query optimization</span>
+            <span class="pill">Developer tooling and internal systems</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="media">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="section-label">Media</p>
+            <h2>Media I'm consuming</h2>
+          </div>
+          <p class="section-intro">
+            A place for links to things I enjoy or find worth returning to.
+          </p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <img
+              class="feature-image"
+              src="assets/images/narcoticbeats.jpeg"
+              alt="Cover art for Narcotic Beats - Accelera Deck"
+            >
+
+            <div class="feature-card-body">
+              <p class="card-tag">Album</p>
+              <h3>Narcotic Beats - Accelera Deck</h3>
+              <p>
+                Lose yourself in the floating synths and eclectic drum breaks. Perfect for dissolving your consciousness into the matrix.
+              </p>
+              <a
+                class="text-link"
+                href="https://open.spotify.com/album/3ReQbTR6j06M7dRTqD1lEK?si=EvKp__sXTiWQhanMLbi9RA"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Listen here
+              </a>
+            </div>
+          </article>
+
+          <article class="feature-card">
+            <img
+              class="feature-image"
+              src="assets/images/leviathan.jpg"
+              alt="Cover art for The Leviathan"
+            >
+
+            <div class="feature-card-body">
+              <p class="card-tag">Reading</p>
+              <h3>The Leviathan - Thomas Hobbes</h3>
+              <p>
+                Rethink your position in social hierarchy and the role of government in our lives. How do we act when there is no social contract?
+              </p>
+              <a
+                class="text-link"
+                href="https://www.gutenberg.org/files/3207/3207-h/3207-h.htm"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Read here
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container section-grid">
+        <div>
+          <p class="section-label">Contact</p>
+          <h2>Get in touch</h2>
+        </div>
+        <div class="contact-list">
+          <a href="mailto:sr6360@nyu.edu">sr6360@nyu.edu</a>
+          <a href="https://github.com/SamRawdon">GitHub</a>
+          <a href="https://www.linkedin.com/in/samrawdon/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
